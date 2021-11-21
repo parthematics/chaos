@@ -71,6 +71,7 @@ def four_wing_system(current_state, t, params):
 system_map = {
     'halvorsen' : halvorsen_system,
     'lorenz' : lorenz_system,
+    'aizawa' : aizawa_system,
     'dadras' : dadras_system,
     'chen' : chen_system,
     'lorenz83' : lorenz83_system,

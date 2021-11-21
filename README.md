@@ -1,5 +1,3 @@
-# Lorenz System
+# Chaotic Attractors
 
-Visualizations and animations of the Lorenz system with Python.
-
-[![Animated Lorenz system attractor](images/animated-lorenz-attractor.gif)](lorenz-system-attractor-animate.ipynb)
+Unique on-chain generative chaotic attractors. More to come soon...

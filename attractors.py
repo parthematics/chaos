@@ -13,6 +13,12 @@ def lorenz_system(current_state, t, params):
     dz_dt = x * y - params['beta'] * z
     return [dx_dt, dy_dt, dz_dt]
 
+def aizawa_system(current_state, t, params):
+    x, y, z = current_state
+    dx_dt = (z - params['b']) * x - (params['d'] * y)
+    dy_dt = (params['d'] * x) + (z - params['b']) * y
+    dz_dt = params['c'] + (params['a'] * z) - ((z ** 3) / 3) - ((x ** 2 + y ** 2) * (1 + params['e'] * z)) + (params['f'] * z * (x ** 3))
+
 def dadras_system(current_state, t, params):
     x, y, z = current_state
     dx_dt = y - (params['a'] * x) + (params['b'] * y * z)
